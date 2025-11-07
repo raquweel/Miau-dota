@@ -13,10 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./miau_dota-app  # 👈 pasta onde está seu app
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,15 +23,19 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd miau_dota-app
+          npm ci
 
       - name: Build site
-        run: npm run build
+        run: |
+          cd miau_dota-app
+          npm run build
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./miau_dota-app/dist  
+          path: ./miau_dota-app/dist
 
   deploy:
     runs-on: ubuntu-latest
