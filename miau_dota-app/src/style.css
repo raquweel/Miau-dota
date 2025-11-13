@@ -255,7 +255,7 @@ header .options a:hover{
   font-size: 1.3rem;
 }
 
-.pets #pata1 {
+.pets .pata1 {
   width: 75px;
   position: relative;
   bottom: 20%;
