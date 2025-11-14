@@ -352,9 +352,8 @@ header .options a:hover {
   width: 75px;
   position: relative;
   bottom: 22%;
-  left: 86%;
+  left: 50%;
   transform: rotate(350deg);
-  transform: translateY(20%);
 }
 
 /*-----------DETAILS PET---------*/
