@@ -33,7 +33,6 @@ body{
   background-color: #FCF9F3;
   font-family: fredoka, 'Segoe UI', sans-serif; 
   font-weight: 400;
-  cursor: pointer;
   width: 100%;
 }
 
@@ -300,6 +299,10 @@ header .options a:hover {
   justify-content: center;
   align-items: center;
   place-items: center;
+}
+
+@media () {
+  
 }
 
 .pets div{
