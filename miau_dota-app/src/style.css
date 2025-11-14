@@ -301,10 +301,6 @@ header .options a:hover {
   place-items: center;
 }
 
-@media () {
-  
-}
-
 .pets div{
   display: flex;
   flex-direction: column;
